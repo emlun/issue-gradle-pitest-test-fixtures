@@ -1,0 +1,26 @@
+plugins {
+  id 'info.solidsoft.pitest' version '1.4.6'
+  id 'java-library'
+}
+
+wrapper {
+  gradleVersion = '6.1.1'
+}
+
+repositories {
+  mavenCentral()
+}
+
+group = 'org.example'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+  testImplementation(
+    'junit:junit:4.12',
+  )
+}
+
+pitest {
+  pitestVersion = '1.4.9'
+}
