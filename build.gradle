@@ -1,6 +1,7 @@
 plugins {
   id 'info.solidsoft.pitest' version '1.4.6'
   id 'java-library'
+  id 'java-test-fixtures'
 }
 
 wrapper {
